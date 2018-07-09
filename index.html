@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <meta http-equiv="refresh"content="10;"> -->
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div id="app">
+        <img class="img" src="./images/bg.jpg" />
+        <a href="javascript:;" class="selector" @click="selectorShow=!selectorShow"></a>
+        <div class="selectorDetail-wrap" id="bar" v-show="selectorShow">
+            <div id="scrolls">
+                <div class="scrollBar" id="scrollBar">
+                    <!-- <div class="boxs" id="boxs"><img src="./images/scroll.png" alt=""></div> -->
+                    <div class="boxs" id="boxs">
+                        <!-- <img src="./images/scroll.png" alt=""> -->
+                    </div>
+                </div>
+
+                <ul class="selectorDetail" id="selectorDetail">
+                    <li >
+                        <span>上海</span>
+                        <img src="./images/selectorPoint.png" />
+                    </li>
+                    <li>
+                        <span>安徽</span>
+                        <img src="./images/selectorPoint.png" />
+                    </li>
+                    <li @click="selectShow=!selectShow">
+                        <span>杭州</span>
+                        <img src="./images/selectorPoint.png" />
+                        <div v-show="selectShow" class="box">
+                            <ul>
+                                <li>杭州1号机房</li>
+                                <li>杭州2号机房</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <span>北京</span>
+                        <img src="./images/selectorPoint.png" />
+                    </li>
+                    <li>
+                        <span>重庆</span>
+                        <img src="./images/selectorPoint.png" />
+                    </li>
+                    <li>
+                        <span>广州</span>
+                        <img src="./images/selectorPoint.png" />
+                    </li>
+                    <li>
+                        <span>成都</span>
+                        <img src="./images/selectorPoint.png" />
+                    </li>
+                    <li>
+                        <span>上海</span>
+                        <img src="./images/selectorPoint.png" />
+                    </li>
+                    <li>
+                        <span>安徽</span>
+                        <img src="./images/selectorPoint.png" />
+                    </li>
+                    <li @click="selectShow=!selectShow">
+                        <span>杭州</span>
+                        <img src="./images/selectorPoint.png" />
+                        <div v-show="selectShow" class="box" id="box">
+                            <ul>
+                                <li>杭州1号机房</li>
+                                <li>杭州2号机房</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <span>北京</span>
+                        <img src="./images/selectorPoint.png" />
+                    </li>
+                    <li>
+                        <span>重庆</span>
+                        <img src="./images/selectorPoint.png" />
+                    </li>
+                    <li>
+                        <span>广州</span>
+                        <img src="./images/selectorPoint.png" />
+                    </li>
+                    <li>
+                        <span>成都</span>
+                        <img src="./images/selectorPoint.png" />
+                    </li>
+                    <li>
+                        <span>上海</span>
+                        <img src="./images/selectorPoint.png" />
+                    </li>
+                    <li>
+                        <span>安徽</span>
+                        <img src="./images/selectorPoint.png" />
+                    </li>
+                    <li @click="selectShow=!selectShow">
+                        <span>杭州</span>
+                        <img src="./images/selectorPoint.png" />
+                        <div v-show="selectShow" class="box">
+                            <ul>
+                                <li>杭州1号机房</li>
+                                <li>杭州2号机房</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <span>北京</span>
+                        <img src="./images/selectorPoint.png" />
+                    </li>
+                    <li>
+                        <span>重庆</span>
+                        <img src="./images/selectorPoint.png" />
+                    </li>
+                    <li>
+                        <span>广州</span>
+                        <img src="./images/selectorPoint.png" />
+                    </li>
+                    <li>
+                        <span>成都</span>
+                        <img src="./images/selectorPoint.png" />
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="voltage">
+            <div class="r_m">
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span class="last">5</span>
+            </div>
+            <div class="r_b">
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span class="last">5</span>
+            </div>
+        </div>
+        <div class="r_bt" id="r_bt">
+
+            <a href="" class="tit" id="tit">查看更多&nbsp;&gt;</a>
+            <div class="scrollBar1" id="scrollBar1">
+                <!-- <div class="boxs" id="boxs"><img src="./images/scroll.png" alt=""></div> -->
+                <div class="boxs1" id="boxs1">
+                    <!-- <img src="./images/scroll.png" alt=""> -->
+                </div>
+            </div>
+            <div class="ulWrap" id="ulWrap">
+                <ul id="selectorDetail1">
+                    <li>
+                        <a href="javascript:;">
+                            有记录时进行展示，根据时间顺序排序排序排序排序
+                            <span>06-25 12:23:24</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            有记录时进行展示，根据时间顺序排序排序排序排序
+                            <span>06-25 12:23:24</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            有记录时进行展示，根据时间顺序排序排序排序排序
+                            <span>06-25 12:23:24</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            有记录时进行展示，根据时间顺序排序排序排序排序
+                            <span>06-25 12:23:24</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            有记录时进行展示，根据时间顺序排序排序排序排序
+                            <span>06-25 12:23:24</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            有记录时进行展示，根据时间顺序排序排序排序排序
+                            <span>06-25 12:23:24</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            有记录时进行展示，根据时间顺序排序排序排序排序
+                            <span>06-25 12:23:24</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            有记录时进行展示，根据时间顺序排序排序排序排序
+                            <span>06-25 12:23:24</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            有记录时进行展示，根据时间顺序排序排序排序排序
+                            <span>06-25 12:23:24</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            有记录时进行展示，根据时间顺序排序排序排序排序
+                            <span>06-25 12:23:24</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            有记录时进行展示，根据时间顺序排序排序排序排序
+                            <span>06-25 12:23:24</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            有记录时进行展示，根据时间顺序排序排序排序排序
+                            <span>06-25 12:23:24</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            有记录时进行展示，根据时间顺序排序排序排序排序
+                            <span>06-25 12:23:24</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            有记录时进行展示，根据时间顺序排序排序排序排序
+                            <span>06-25 12:23:24</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            有记录时进行展示，根据时间顺序排序排序排序排序
+                            <span>06-25 12:23:24</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            有记录时进行展示，根据时间顺序排序排序排序排序
+                            <span>06-25 12:23:24</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            有记录时进行展示，根据时间顺序排序排序排序排序
+                            <span>06-25 12:23:24</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            有记录时进行展示，根据时间顺序排序排序排序排序
+                            <span>06-25 12:23:24</span>
+                        </a>
+                    </li>
+                    <li>
+                            <a href="javascript:;">
+                                有记录时进行展示，根据时间顺序排序排序排序排序
+                                <span>06-25 12:23:24</span>
+                            </a>
+                        </li>
+                     
+                 
+                  
+                </ul>
+            </div>
+        </div>
+        <img id="mainImg" class="mainImg" src="./images/normal.png" />
+        <img id="mainImg1" class="mainImg" src="./images/normal.png" />
+        <img id="mainImg2" class="mainImg" src="./images/normal.png" />
+        <img id="mainImg3" class="mainImg" src="./images/normal.png" />
+        <div id="main" style="width: 39%;height:39%;">
+        </div>
+        <div id="main1" style="width: 39%;height:39%;">
+        </div>
+        <div id="main2" style="width: 39%;height:39%;">
+        </div>
+        <div id="main3" style="width: 39%;height:39%;">
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.bootcss.com/vue/2.5.17-beta.0/vue.min.js"></script>
+    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/iScroll/5.2.0/iscroll.min.js"></script>
+    <!-- <script src="./js/common.js"></script> -->
+
+    <script type="text/javascript">
+        new Vue({
+            el: '#app',
+            data: {
+                selectorShow: false,
+                selectShow: false
+            },
+            // methods: {
+            //     showBar() {
+            //         this.selectorShow = true;
+            //         this.$nextTick(() => {
+            //             var myScroll = new IScroll('#scrolls', {
+            //                 mouseWheel: true,
+            //                 scrollbars: 'custom'
+            //             });
+            //         })
+
+            //     }
+            // },
+            mounted() {
+                var valArr = [{
+                            dom: echarts.init(document.getElementById('main')),
+                            max: 190,
+                            waringValue: 120,
+                            realVal: 130
+                        },
+                        {
+                            dom: echarts.init(document.getElementById('main1')),
+                            max: 285,
+                            waringValue: 200,
+                            realVal: 50
+                        },
+                        {
+                            dom: echarts.init(document.getElementById('main2')),
+                            max: 380,
+                            waringValue: 300,
+                            realVal: 50
+                        },
+                        {
+                            dom: echarts.init(document.getElementById('main3')),
+                            max: 67,
+                            waringValue: 50,
+                            realVal: 60
+                        }
+                    ],
+                    _this = this;
+                for (var i = 0; i < valArr.length; i++) {
+                    result = valArr[i]['realVal'] > valArr[i]['waringValue'];
+                    if (result) {
+                        document.getElementsByClassName("mainImg")[i].src = "./images/abnormal.png";
+                    }
+                    valArr[i]['dom'].setOption({
+                        // tooltip: {
+                        //     formatter: "{a} <br/>{b} : {c}%"
+                        // },
+                        min: 0,
+                        max: 190,
+                        series: [{
+                            // name: '业务指标',
+                            type: 'gauge',
+                            radius: '73.5%',
+                            max: valArr[i]['max'],
+                            startAngle: 238,
+                            endAngle: -55,
+                            detail: {
+                                formatter: '{value}'
+                            },
+                            splitLine: {
+                                show: false
+                            },
+                            axisTick: {
+                                show: false
+                            },
+                            axisLine: { // 坐标轴线
+                                lineStyle: {
+                                    width: 22,
+                                    // color:[[1,new echarts.graphic.LinearGradient(
+                                    //     0, 0, 0, 1,
+                                    //     [
+                                    //         {offset: 0, color: '#3b579b'},
+                                    //         {offset: 0.5, color: '#47a8cc'},
+                                    //         {offset: 1, color: '#4fdcea'}
+                                    //     ]
+                                    // )]],
+                                    color: result ? [
+                                        [1,
+                                            new echarts.graphic.RadialGradient(0.2, 0.9,
+                                                0.8, [{
+                                                    offset: 0,
+                                                    color: '#4a4792'
+                                                }, {
+                                                    offset: 1,
+                                                    color: "#ee418a"
+                                                }]
+                                            )
+                                        ]
+                                    ] : [
+                                        [1,
+                                            new echarts.graphic.RadialGradient(0.2, 0.9,
+                                                0.8, [{
+                                                    offset: 0,
+                                                    color: '#3a579b'
+                                                }, {
+                                                    offset: 1,
+                                                    color: "#4fdbe9"
+                                                }]
+                                            )
+                                        ]
+                                    ],
+                                    shadowColor: '#fff', //默认透明
+                                    shadowBlur: 10,
+                                    opacity: 0.8
+                                }
+                            },
+                            data: [{
+                                value: valArr[i]['realVal'],
+                                // name: '完成率'
+                            }],
+                            axisLabel: {
+                                show: false
+                            },
+                            pointer: {
+                                width: 2
+                            },
+                            detail: {
+                                fontSize: 30,
+                                color: result ? "#e33f87" : "#fff",
+                                offsetCenter: [0, '20%']
+                            }
+                        }],
+
+                    })
+                }
+
+                function my$(id) {
+                    return document.getElementById(id);
+                }
+                //最外面的div
+                var scrolls = my$("scrolls");
+                //文字div
+                var selectorDetail = my$("selectorDetail");
+                //装滚动条的div---容器
+                var scrollBar = my$("scrollBar");
+                //滚动条
+                var boxs = my$("boxs");
+                //设置滚动条的高度
+                //滚动条的高=装滚动条的div的高*box的高/文字div的高
+                var height = scrollBar.offsetHeight * scrolls.offsetHeight / selectorDetail.offsetHeight;
+                boxs.style.height = height + "px";
+                // 获取记录里面的a标签
+                var tit=my$("tit");
+                // 获取记录的盒子
+                var ulWrap=my$("ulWrap");
+                // 获取最外层盒子
+                var r_bt=my$("r_bt")
+              
+                var selectorDetail1=my$("selectorDetail1")
+               
+             
+
+                //移动滚动条
+                boxs.onmousedown = function (e) {
+                    //   console.log(e);
+                    var spaceY = e.clientY - boxs.offsetTop;
+                    document.onmousemove = function (e) { //移动事件
+                        // console.log(e);
+                        var y = e.clientY - spaceY;
+                        y = y < 0 ? 0 : y; //最小值
+                        y = y > scrollBar.offsetHeight - boxs.offsetHeight ? scrollBar.offsetHeight -
+                            boxs.offsetHeight : y;
+                        boxs.style.top = y+ "px";
+                        window.getSelection ? window.getSelection().removeAllRanges() : document.selection
+                            .empty();
+                        var moveY = y * (selectorDetail.offsetHeight - scrolls.offsetHeight) / (
+                            scrollBar.offsetHeight - boxs.offsetHeight);
+                        selectorDetail.style.marginTop = -moveY + "px";
+                        // console.log(moveY)
+                    };
+                };
+                //最外面的div
+                var scroll = my$("r_bt");
+                //文字div
+                var selectorDetail1 = my$("selectorDetail1");
+                //装滚动条的div---容器
+                var scrollBar1 = my$("scrollBar1");
+                //滚动条
+                var boxs1 = my$("boxs1");
+                //设置滚动条的高度
+                //滚动条的高=装滚动条的div的高*box的高/文字div的高
+                var height = scrollBar1.offsetHeight * scroll.offsetHeight / selectorDetail1.offsetHeight;
+                // boxs1.style.height = height + "px";
+             
+                if(!selectorDetail1.hasChildNodes()){
+                    tit.style.display="none";
+                    selectorDetail1.style.background="url(./images/star.png) no-repeat";
+                    document.getElementById("scrollBar1").style.display="none";
+                    // boxs1.style.position="fixed";
+                    // selectorDetail1.stylebackgroundAttachment="fixed"
+                    
+                }
+              
+                //移动滚动条
+                boxs1.onmousedown = function (e) {
+                    //   console.log(e);
+                    var spaceY = e.clientY - boxs1.offsetTop;
+                    document.onmousemove = function (e) { //移动事件
+                        // console.log(e);
+                        var y = e.clientY - spaceY;
+                        y = y < 0 ? 10: y; //最小值
+                        y = y > scrollBar1.offsetHeight - boxs1.offsetHeight ? scrollBar1.offsetHeight -
+                            boxs1.offsetHeight : y;
+                        boxs1.style.top = y + "px";
+                        window.getSelection ? window.getSelection().removeAllRanges() : document.selection
+                            .empty();
+                        var moveY = y * (selectorDetail1.offsetHeight - scroll.offsetHeight) / (
+                            scrollBar1.offsetHeight - boxs1.offsetHeight);
+                        selectorDetail1.style.marginTop = moveY + "px";
+
+                        // console.log(moveY)
+                    };
+                };
+                document.onmouseup = function () {
+                    document.onmousemove = null;
+                };
+                $(document).bind('click', function (e) {
+                    var e = e || window.event; //浏览器兼容性 
+                    var elem = e.target || e.srcElement;
+                    while (elem) { //循环判断至跟节点，防止点击的是div子元素 
+                        if (elem.id && elem.id == 'bar') {
+                            return;
+                        }
+                        elem = elem.parentNode;
+                    }
+
+                    $('#bar').css('display', 'none'); //点击的不是div或其子元素 
+                });
+            }
+        })
+    </script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,304 @@
+html{
+    font-size:12px;
+    height:100%;
+    width:100%;
+}
+body{
+    width:100%;
+    margin: 0;
+    padding: 0;
+    position:relative;
+}
+ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+.img{
+    width:100%;
+    height:auto;
+    top:0;
+    left:0;
+}
+
+.voltage{
+    /* background: red; */
+    position: absolute;
+    right: 20%;
+    top: 19.6%;
+    right: 12%;
+    top: 25.7%;
+    height: 18.4%;
+    width: 21%;
+    opacity: 0.8;
+}    
+.voltage div{
+    width:100%;
+    height:50%;
+    display:table
+}
+.voltage span{
+    width: 15%;
+    height: 41%; 
+    line-height:12%;
+    color: #56ffff;
+    /* background: #164471; */
+    text-align: center;
+    font-size: 3.8rem;
+    margin: 1% 5% 1% 0%;
+    display:table-cell;    
+    vertical-align:middle;
+}
+.voltage span.last{
+    margin-right:0;
+}
+.selector{
+    position:absolute;
+    right: 41%;
+    top: 3.6%;
+    display: block;
+    width: 2.5%;
+    height: 2.5%;
+}
+.selectorDetail-wrap{
+    position: absolute;
+    right: 41%;
+    top: 7%;
+    width: 10.5%;
+    height: 37%;
+    padding:2% 0;
+    background: url(../images/selectBg.png) no-repeat;
+    background-size: 100% 100%;
+    overflow:hidden;
+    z-index: 1
+}
+/* .selectorDetail-wrap .scroll {
+    position: absolute;
+    right: 10%;
+    top: 5%;
+} */
+.selectorDetail-wrap #scrolls{
+    height:95%;
+    overflow:hidden;
+    position: relative;
+}
+#main{
+    position:absolute;
+    top:20%;
+    left:0;
+    background:url(../images/chartBg01.png) no-repeat center 41.5%;
+    background-size:41.8% auto;
+}
+
+#main1{
+    position:absolute;
+    top:20%;
+    left:23%;
+    background:url(../images/chartBg02.png) no-repeat center 41.5%;
+    background-size:41.8% auto;
+}
+#main2{
+    position:absolute;
+    top:50%;
+    left:0;
+    background:url(../images/chartBg03.png) no-repeat center 41.5%;
+    background-size:41.8% auto;
+}
+#main3{
+    position:absolute;
+    top:50%;
+    left:23%;
+    background:url(../images/chartBg04.png) no-repeat center 41.5%;
+    background-size:41.8% auto;
+}
+
+#mainImg{
+    position:absolute;
+    top: 50%;
+    left: 17.4%;
+    width: 4%;
+}
+#mainImg1{
+    position:absolute;
+    top: 50%;
+    left:40.4%;
+    width: 4%;
+}
+#mainImg2{
+    position:absolute;
+    top: 80%;
+    left: 17.4%;
+    width: 4%;
+}
+#mainImg3{
+    position:absolute;
+    top:80%;
+    left:40.4%;
+    width: 4%;
+}
+
+.scrollBar{
+    /* width: 6%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #eee; */
+    width: 7%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 10%;
+    /* background-color: #eee; */
+}
+.scrollBar .boxs{
+ 
+    width: 100%;
+    /* height: 32%; */
+    height: 19%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background:url(../images/scroll.png)  no-repeat;
+    cursor: pointer;
+    z-index: 1;
+}
+/* .scrollBar .boxs img {
+    display: block;
+    width: 100%;
+    height: 100%;
+} */
+.selectorDetail{
+    width: 100%;
+    position: absolute;
+  
+}
+.selectorDetail li{
+    margin: 0 9%;
+    color:#54f9fa;
+    font-size:1.3rem;
+    /* height:8%; */
+    padding: 5% 0;
+}
+.selectorDetail li span{
+    margin-left:8%;
+}
+.selectorDetail .box {
+    background:rgba(78,233,237,0.5);
+    padding:0;
+    margin: 8% 0;
+}
+
+.selectorDetail li img{
+    margin-left:10px;
+}
+.selectorDetail li .box ul li{
+   font-size: 1.2rem;
+   margin: -3% 0 -6% 0;
+   padding-left: 8%;
+ 
+}
+.r_bt{
+    /* position: absolute; */
+   
+    /* right: 9.5%;
+    top: 60%;
+    height: 23.2%;
+    width: 30%;
+    opacity: 0.8; */
+    position: absolute;
+    /* right: 20%; */
+    /* top: 80%; */
+    right: 7.5%;
+    top: 56%;
+    height: 31.2%;
+    width: 33%;
+    opacity: 0.8;
+    padding: 2%;
+    box-sizing: border-box;
+}
+
+.r_bt .tit {
+    text-decoration: none;
+    position: absolute;
+    right: 11%;
+    top: 8%;
+    color:#fff;
+    text-decoration:underline;
+}
+.r_bt .ulWrap{
+    overflow:hidden;
+    height:100%;
+    margin-top: 5%;
+}
+.r_bt ul {
+    width:100%;
+    height: 100%;
+    
+}
+.r_bt ul li {
+    /* height: 9%;
+    margin-top: 2%;
+    width: 100%;
+    line-height: 2rem;
+    position: relative; */
+    height: 9%;
+    margin-top: 0.5%;
+    margin-left: -6%;
+    width: 100%;
+    line-height: 2rem;
+    position: relative;
+   
+}
+.r_bt ul li a {
+    display: block;
+    text-decoration: none;
+    color: #54f9fa;
+    width: 100%;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+     overflow:hidden;
+     cursor:pointer;
+     padding-left: 7%;
+     color:#fff;
+     line-height:14px;
+}
+.r_bt ul li a:hover{
+    text-decoration:underline;
+}
+.r_bt ul li span {
+    position: absolute;
+    right: 0;
+    
+    color:#fff;
+}
+.scrollBar1{
+    /* width: 6%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #eee; */
+    /* width: 2%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 10%; */
+    /* background-color: #eee; */
+    width: 2%;
+    height: 97%;
+    position: absolute;
+    top: 1%;
+    right: 1%;
+}
+.scrollBar1 .boxs1{
+ 
+    width: 100%;
+    height: 22%;
+    position: absolute;
+    top: 3%;
+    right: -5%;
+    background:url(../images/scroll.png)  no-repeat;
+    cursor: pointer;
+    z-index: 1;
+}
